@@ -1,0 +1,90 @@
+Dataset_Parameter:
+  CIFAR_10:
+    batch_size: 10
+    learning_rate: 0.1
+    local_epochs: 5
+  MNIST:
+    batch_size: 10
+    learning_rate: 0.01
+    local_epochs: 5
+EMD_Desired_Group:
+  A:
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.4
+  - 0.4
+  - 0.4
+  - 0.4
+  - 0.4
+  - 0.4
+  - 0.4
+  - 0.4
+  - 0.4
+  - 0.4
+  B:
+  - 0.7
+  - 0.7
+  - 0.7
+  - 0.7
+  - 0.7
+  - 0.3
+  - 0.3
+  - 0.3
+  - 0.3
+  - 0.3
+  - 0.3
+  - 0.3
+  - 0.3
+  - 0.3
+  - 0.3
+  - 0.3
+  - 0.3
+  - 0.3
+  - 0.3
+  - 0.3
+  C:
+  - 0.1
+  - 0.1
+  - 0.1
+  - 0.1
+  - 0.1
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.3
+  - 0.3
+  - 0.3
+  - 0.3
+  - 0.3
+Num_Classes: 10
+Num_Clients: 20
+Num_Data: 1000
+Options_Aggregation_Algorithm:
+- FedAvg
+Options_Dataset:
+- MNIST
+- CIFAR_10
+Options_Divide:
+- A
+- B
+- C
+Options_Incentive_Mechanism:
+- FMore
+- FLIM
+- EMD_Greedy
+- EMD_FLIM
